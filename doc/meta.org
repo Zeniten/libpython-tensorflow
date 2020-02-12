@@ -1,0 +1,4 @@
+#+TITLE: Tensorflow in Clojure
+
+[[https://msync.org/notes/python-clj-ml/][Guide]]
+
