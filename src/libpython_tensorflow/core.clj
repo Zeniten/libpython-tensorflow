@@ -1,9 +1,9 @@
-(ns tf-test.core
+(ns libpython-tensorflow.core
   (:require [libpython-clj.python :as py]
             [libpython-clj.jna.base]))
 
 ;; Depending on your Python version and virtualenv setup, change accordingly
-;; Kan man greie seg uten uttrykket rett nedenfor?
+;; Is the expression just below necessary?
 (alter-var-root #'libpython-clj.jna.base/*python-library* (constantly "python3.7m"))
 (py/initialize! :python-executable (str (System/getenv "HOME") "/miniconda3/envs/ml/bin/python"))
 
